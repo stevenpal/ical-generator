@@ -79,7 +79,7 @@ describe('Issues', function () {
             });
 
             const str = calendar.toString();
-            assert.ok(str.indexOf('RRULE:FREQ=MONTHLY;COUNT=3;INTERVAL=1;BYDAY=MO;BYSETPOS=3') > -1);
+            assert.ok(str.indexOf('RRULE:FREQ=MONTHLY;COUNT=3;INTERVAL=1;BYDAY=MO,FR;BYSETPOS=3') > -1);
         });
     });
 
